@@ -16,27 +16,22 @@ export default function LoginScreen() {
         />
       </View>
       <View style={styles.loginContainer}>
-        <Text style={styles.loginText}>LOG IN</Text>
+        <Text style={styles.loginText}>FORGOT PASSWORD</Text>
         
         <TextInput
           style={styles.input}
-          placeholder="School email"
+          placeholder="Email used to register"
           placeholderTextColor="#ccc"
         />
-        <TextInput
-          style={styles.input}
-          placeholder="Password"
-          placeholderTextColor="#ccc"
-          secureTextEntry
-        />
-        
-        <Text style={styles.forgotPassword}><Link href="/auth/forgotpass">Forgot password?</Link></Text>
-        
+
         <TouchableOpacity style={styles.loginButton}>
-          <Text style={styles.loginButtonText}>LOGIN</Text>
+          <Text style={styles.loginButtonText}>SEND EMAIL</Text>
         </TouchableOpacity>
         
-        
+        <Text style={styles.signupText}>Have an account? <Text style={styles.signupLink}>
+            <Link href="/auth/sign-in">Sign In</Link>
+        </Text></Text>
+
         <Text style={styles.signupText}>Don’t have an account? <Text style={styles.signupLink}>
             <Link href="/auth/sign-up">Sign Up</Link>
         </Text></Text>
