@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 import { Link, Stack } from 'expo-router';
 
-export default function LoginScreen() {
+export default function SignIn() {
   
   return (
     
